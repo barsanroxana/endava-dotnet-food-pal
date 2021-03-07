@@ -1,0 +1,22 @@
+<!-- <mat-grid-list cols="3" rowHeight="3:1" >
+  <ng-container *ngFor="let item of providerList" >>
+    <mat-grid-tile class="glass-card" colspan='1' >
+        {{item.description}}
+        {{item.name}}
+
+      <button mat-raised-button color="accent" (click)="feedMe(item.id)">Feed me</button>
+    </mat-grid-tile>
+</ng-container>
+</mat-grid-list> -->
+
+
+<div class="container grid">
+  <div ng-container *ngFor="let item of providerList" class="glass-card">
+    <h1>{{item.name}}</h1>
+    <ul class="ul li">
+      <li>Descruption: {{item.description}}</li>
+    </ul>
+    <button mat-raised-button color="accent" (click)="feedMe(item.id)">Feed me</button>
+   </div>
+ </div>
+

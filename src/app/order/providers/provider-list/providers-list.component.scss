@@ -1,0 +1,42 @@
+:host {
+  background: inherit;
+}
+.container {
+  grid-template-columns:100px 100px 100px;
+  grid-template-rows: 250px 200px 100px;
+  column-gap: 10px;
+  row-gap: 25px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(440px, 2fr));
+  grid-gap: 4rem;
+  background: inherit;
+
+  button {
+    padding: 10px 20px;
+    margin: 10px ;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #cdcdcd;
+    position: absolute;
+    bottom: 0;
+    right: 0;;
+  }
+}
+.grid > div {
+  background: inherit;
+  padding: 2rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+  margin-left: 40px;
+  margin-top: 20px;;
+  margin-right: 40px;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+ul {
+  list-style-type:none;
+}
